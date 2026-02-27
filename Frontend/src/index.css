@@ -1,0 +1,16 @@
+@font-face{
+  font-family: Display;
+  src: url('./fonts/Bungee-Regular.ttf')
+}
+
+@font-face {
+  font-family: Sunset;
+  src: url('./fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: Display, sans-serif;
+  --font-sunset: Sunset, sans-serif;
+}
