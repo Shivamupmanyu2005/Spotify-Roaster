@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_BACKEND_URL=http://100.53.212.138:3000
+    ports:
+      - "5173:80"
+    environment:
+      - NODE_ENV=production
