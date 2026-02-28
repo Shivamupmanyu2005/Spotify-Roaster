@@ -3,7 +3,7 @@ const redisClient = require('../config/redisClient')
 
 let client_id = process.env.client_id;
 let client_secret = process.env.client_secret;
-let redirect_uri = 'http://127.0.0.1:3000/callback';
+let redirect_uri = process.env.redirect_uri;
 
 const generateString = () => {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
@@ -83,7 +83,7 @@ const generateString = () => {
         secure: false
     });
 
-     res.redirect('http://127.0.0.1:5173/dashboard');
+     res.redirect('http://54.81.124.153/dashboard');
         
     }
 
